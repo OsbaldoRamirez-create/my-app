@@ -1,12 +1,12 @@
 import React from 'react'
 import RamirezLogo from './Images/RamirezLogo.png';
+import './Styles/HomeStyles.css';
+
 export default function Home() {
   return (
     <div className='main-home'> 
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
-        <h1>Home page</h1>
         <div className="intro">
-        
         <div className="intro-boxes">
             <h3>Who are we?</h3>
             <p>
