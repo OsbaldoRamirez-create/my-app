@@ -5,9 +5,9 @@ export default function Home() {
     <div className='main-home'> 
     
         <h1>Home page</h1>
-        <div class="intro">
+        <div className="intro">
         
-        <div class="intro-boxes">
+        <div className="intro-boxes">
             <h3>Who are we?</h3>
             <p>
                 Ramirez Landscaping is a family owned and operated business proudly serving Redwood City and all of the bay area for over 15 years. 
@@ -15,7 +15,7 @@ export default function Home() {
                 project is completed as you imagined. We take pride in our attention to detail and our bendable focus on customer satisfaction.
             </p>
         </div>
-        <div class="intro-boxes">
+        <div className="intro-boxes">
             <h3>What do we do?</h3>
             <p>
                 Our reputation is built on providing the best maintenace services, ensuring that your property always looks its best.
