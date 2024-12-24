@@ -1,9 +1,9 @@
 import React from 'react'
-
+import RamirezLogo from './Images/RamirezLogo.png';
 export default function Home() {
   return (
     <div className='main-home'> 
-    
+        <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
         <h1>Home page</h1>
         <div className="intro">
         
