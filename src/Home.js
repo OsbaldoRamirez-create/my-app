@@ -1,11 +1,13 @@
 import React from 'react'
 import RamirezLogo from './Images/RamirezLogo.png';
 import './Styles/HomeStyles.css';
+import Slideshow from './Components/Slideshow';
 
 export default function Home() {
   return (
     <div className='main-home'> 
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
+        <Slideshow/>
         <div className="intro">
         <div className="intro-boxes">
             <h3>Who are we?</h3>
