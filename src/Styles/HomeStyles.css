@@ -1,9 +1,16 @@
 
+
 .ramirezLogo{
-    width: 40%;
+    width: 400px;
+    justify-self: center;
+}
+
+.main-home{
+    display: grid;
+    justify-content: center;
 }
 .slideshow-container{
-    width: 100%;
+    width: 1000px;    
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -23,7 +30,24 @@
     height: 100%;
     object-fit: cover; /* crop some of pic 'fill' doesnt crop pic*/
 }
-
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
 .intro {
     display: flex;
     justify-content: center;
