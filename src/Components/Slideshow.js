@@ -25,7 +25,7 @@ useEffect(() => {
   
   
     return (
-    <div class="slideshow-container"> 
+    <div className="slideshow-container"> 
   
           {images.map((image, index) => (
             <div key={index} className= {`slide ${index === slideIndex ? 'active': ''}`}> 
