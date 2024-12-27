@@ -1,0 +1,62 @@
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.nav-text{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-text .link{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+/* hover over nav text*/
+.link:hover, .dropbtn:hover{
+    background-color: green;
+}
+/* active page */
+.nav-text .active{
+    background-color: green;
+    color: black;
+}
+
+/* about us navlink */
+.dropbtn{
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+.dropdown-menu a:hover{
+    background-color: green;
+}
+
