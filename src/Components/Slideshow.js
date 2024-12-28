@@ -8,7 +8,7 @@ import image5 from '../Images/fence.png';
 
 const yardImages = [
 {src: image1, alt:"Front yard slabs", text:"Rocks Slabs Landscape"},
-{src: image2, alt:"Retaining wall", text:"Retaining Wall and Lawn"},
+{src: image2, alt:"Retaining wall", text:"Retaining Wall and Artifical Lawn"},
 {src: image3, alt:"Backyard Lawn", text:"Back yard lawn"},
 {src: image4, alt:"Bark and slabs", text:"Bark and Rock Slabs"},
 {src: image5, alt:"Backyard Fence", text:"New Redwood fence"}
