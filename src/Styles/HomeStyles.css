@@ -10,7 +10,8 @@
     justify-content: center;
 }
 .slideshow-container{
-    width: 1000px;    
+    width: 100%;    
+    max-width: 1000px;
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -85,5 +86,16 @@
     .intro-boxes{
         width: 70%;
         margin: 10px 0;
+    }
+}
+@media(min-width: 1000px){
+    .slideshow-container{
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:999px){
+    .slideshow-container{
+        width: 100%;
     }
 }
