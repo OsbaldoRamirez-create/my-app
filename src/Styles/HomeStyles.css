@@ -99,7 +99,7 @@
     margin-top: 10px;
     font-size: 18px;
 }
-button:hover{
+.boxes-container button:hover, .btn-container button:hover{
     background-color: white;
     color: green;
 }
@@ -119,6 +119,74 @@ button:hover{
 
 }
 
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#landscaping-form {
+    display: flex;
+    flex-wrap: wrap; /*wrap onto next line when not enough space */
+    justify-content: center;
+    width: 100%;  /*ensure we use the whole form */
+}
+.input-container, .description-container{
+    flex: 1 1 400px ;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    
+}
+.input-container h4 {
+    color: blue;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.btn-container{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-container button{
+    width: 150px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 22px;
+}
+.form-class {
+    margin-bottom: 10px;
+}
+/* input boxes */
+.form-class input, .form-class textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px; 
+    border-color: transparent;
+    background-color: lightgray;
+}
+.form-class input::placeholder, .form-class textarea::placeholder {
+    font-size: 15px;
+    color: rgb(75, 74, 74);
+
+}
+textarea {
+    padding: 10px;
+    height: 200px;
+    border: 9px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
 
 @media(max-width:640px){
     .intro{
