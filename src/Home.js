@@ -4,6 +4,7 @@ import grassImg from './Images/NewGrass2.png';
 import patioImg from './Images/cleanerPatio.png';
 import './Styles/HomeStyles.css';
 import Slideshow from './Components/Slideshow';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -29,50 +30,51 @@ export default function Home() {
             </p>
         </div>
     </div>
-    
-    <div class="content">
-        <div class="boxes-container">
+
+    <div className="content">
+        <div className="boxes-container">
             <h3>Maintenance</h3>
-            <div class="info-box">
+            <div className="info-box">
                 <img src ={grassImg} alt = "Yard Maintenance"/>
             </div>
-            <button onclick="window.location.href ='/maintenance-page.html';" > More</button>
+            <NavLink className="btn-link" to="/maintenance"> More</NavLink>
+            
         </div>  
           
-        <div class="boxes-container">
+        <div className="boxes-container">
             <h3>Landscaping</h3>
-            <div class="info-box">
+            <div className="info-box">
                 <img src ={patioImg }alt = "Landscaping Services"/>    
             </div>
-            <button onclick="window.location.href ='/landscaping-page.html';" > More</button>
+            <NavLink className="btn-link" to="/Landscaping"> More</NavLink>
         </div>
         
     </div>
 
-    <div class="quote-container">
+    <div className="quote-container">
         <h1> Request a Consultation</h1>
         <form id="landscaping-form">
-            <div class="input-container">
-                <div class="form-class">
+            <div className="input-container">
+                <div className="form-class">
                     <input type="text" id="name" name="name" placeholder="Name*" required/>
                 </div>
-                <div class="form-class">
+                <div className="form-class">
                     <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required/>
                 </div>
-                <div class="form-class">
+                <div className="form-class">
                     <input type="email" id="email" name="email" placeholder="Email*" required/>
                 </div>
-                <div class="form-class">
+                <div className="form-class">
                     <input type="text" id="subject" name="subject" placeholder="Subject*" required/>
                     <h4> *Free quotes only in the Bay Area CA all other locations subject to a fee depending on location</h4> 
                 </div>
                 </div>
-            <div class="description-container">
-                <div class="form-class">
+            <div className="description-container">
+                <div className="form-class">
                     <textarea id="description" name="description" placeholder="Description:"></textarea>
                 </div>
             </div>
-        <div class="btn-container">
+        <div className="btn-container">
         <button type="submit"> Submit</button>
         </div>
     </form>
