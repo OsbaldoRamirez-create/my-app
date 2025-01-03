@@ -29,6 +29,7 @@ export default function Home() {
             </p>
         </div>
     </div>
+    
     <div class="content">
         <div class="boxes-container">
             <h3>Maintenance</h3>
@@ -46,6 +47,35 @@ export default function Home() {
             <button onclick="window.location.href ='/landscaping-page.html';" > More</button>
         </div>
         
+    </div>
+
+    <div class="quote-container">
+        <h1> Request a Consultation</h1>
+        <form id="landscaping-form">
+            <div class="input-container">
+                <div class="form-class">
+                    <input type="text" id="name" name="name" placeholder="Name*" required/>
+                </div>
+                <div class="form-class">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required/>
+                </div>
+                <div class="form-class">
+                    <input type="email" id="email" name="email" placeholder="Email*" required/>
+                </div>
+                <div class="form-class">
+                    <input type="text" id="subject" name="subject" placeholder="Subject*" required/>
+                    <h4> *Free quotes only in the Bay Area CA all other locations subject to a fee depending on location</h4> 
+                </div>
+                </div>
+            <div class="description-container">
+                <div class="form-class">
+                    <textarea id="description" name="description" placeholder="Description:"></textarea>
+                </div>
+            </div>
+        <div class="btn-container">
+        <button type="submit"> Submit</button>
+        </div>
+    </form>
     </div>
     
      </div>
