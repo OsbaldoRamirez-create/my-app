@@ -25,6 +25,7 @@ useEffect(() => {
   
   
     return (
+      <div className='slideshow-main'>
     <div className="slideshow-container"> 
   
           {images.map((image, index) => (
@@ -37,7 +38,18 @@ useEffect(() => {
           {/*Slideshow Arrows */ }
           <button className="prev" onClick={() => setSlideIndex((slideIndex -1 + images.length) % images.length)}>&#10094;</button>
           <button className="next" onClick={() => setSlideIndex((slideIndex +1) % images.length)}>&#10095;</button>
-        </div>
+         </div> 
+  
+      {/* slideshow dots */}
+        <div className=" dot-container">
+            {images.map((_, dotIndex)=>(
+              <span key={dotIndex} className={`dot ${dotIndex === slideIndex ? 'active-dot': ''}`}
+              onClick={()=> setSlideIndex(dotIndex)}> </span>
+            ))}
+
+      </div>
+    
+    </div>
   );
 };
 export default Slideshow;
