@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Navbar from './Components/Navbar';
-
+import FooterBar from './Components/FooterBar';
 
 export default function App() {
   return (
@@ -17,8 +17,9 @@ export default function App() {
         <Route path='/' element={<Home/>}></Route>
        
       </Routes>
-    
-    
+      
+      <FooterBar/>
+
     </div>
     </Router>
   );
