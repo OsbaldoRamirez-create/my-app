@@ -88,7 +88,8 @@
     height: auto;
 
 }
-.boxes-container button{
+.boxes-container .btn-link{
+    display: inline-block;
     padding: 10px 20px;
     background-color: green;
     color: white;
@@ -99,7 +100,7 @@
     margin-top: 10px;
     font-size: 18px;
 }
-.boxes-container button:hover, .btn-container button:hover{
+.boxes-container .btn-link:hover, .btn-container button:hover{
     background-color: white;
     color: green;
 }
