@@ -1,0 +1,15 @@
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+footer a:hover{
+    color: green;
+    text-decoration: underline;
+}
