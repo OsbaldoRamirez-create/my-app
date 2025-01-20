@@ -9,7 +9,7 @@ export default function Navbar() {
         <NavLink className='link' to='/'>Home</NavLink>
         <div className='dropdown'>
 
-            <NavLink className='dropbtn' to="/about">About us</NavLink>
+            <NavLink className='dropbtn' to="/About">About us</NavLink>
             <div className='dropdown-menu'>
                 <NavLink className='link' to="/maintenance">Maintenance Services </NavLink>
                 <NavLink className='link' to="/landscaping">Landscaping Services </NavLink>
