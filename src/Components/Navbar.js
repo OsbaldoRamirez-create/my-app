@@ -11,8 +11,8 @@ export default function Navbar() {
 
             <NavLink className='dropbtn' to="/About">About us</NavLink>
             <div className='dropdown-menu'>
-                <NavLink className='link' to="/maintenance">Maintenance Services </NavLink>
-                <NavLink className='link' to="/landscaping">Landscaping Services </NavLink>
+                <NavLink className='drop-link' to="/maintenance">Maintenance Services </NavLink>
+                <NavLink className='drop-link' to="/landscaping">Landscaping Services </NavLink>
                 
             </div>
         </div>
