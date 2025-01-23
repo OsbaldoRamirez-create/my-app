@@ -13,7 +13,7 @@ nav{
     text-decoration: none;
 }
 
-.nav-text .link{
+.nav-text .link, .drop-link{
     display: block;
     padding: 10px;
     color: white;
@@ -21,16 +21,19 @@ nav{
 }
 /* hover over nav text*/
 .link:hover, .dropbtn:hover{
+    padding: 20px;
     background-color: green;
 }
 /* active page */
 .nav-text .active{
+    padding: 20px;
     background-color: green;
     color: black;
 }
 
 /* about us navlink */
 .dropbtn{
+    display: block;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -40,11 +43,11 @@ nav{
 
 .dropdown{
     position: relative;
+    display: inline-block;
 }
 
 .dropdown-menu{
     display: none;
-    /* top: 43px; */
     position: absolute;
     background-color: black;
     min-width: 160px;
@@ -55,7 +58,6 @@ nav{
 .dropdown:hover .dropdown-menu{
     display: block;
 }
-
 
 .dropdown-menu a:hover{
     background-color: green;
