@@ -21,14 +21,13 @@ nav{
 }
 /* hover over nav text*/
 .link:hover, .dropbtn:hover{
-    padding: 20px;
-    background-color: green;
+   color: green;
 }
 /* active page */
 .nav-text .active{
     padding: 20px;
     background-color: green;
-    color: black;
+    color: white;
 }
 
 /* about us navlink */
