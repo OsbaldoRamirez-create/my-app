@@ -8,7 +8,7 @@ nav{
 
 .nav-text{
     display: flex;
-    gap: 20px;
+    gap: 0px;
     align-items: center;
     text-decoration: none;
 }
