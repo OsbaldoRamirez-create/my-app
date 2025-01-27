@@ -9,7 +9,7 @@ export default function About() {
         <h1> About Us</h1>
         <Slideshow/>
         <div className='about-info'>
-        <h2> Why choose us?</h2>
+        <h2> Why Choose Us?</h2>
         <p>
             At Ramirez Landscaping, we bring your vision to life while giving fair prices. We have been maintaining and remaking yards for over 15 years all over the bay area
             even having loyal customers since we started. 
