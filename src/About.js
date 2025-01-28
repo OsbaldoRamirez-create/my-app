@@ -13,10 +13,26 @@ export default function About() {
         <p>
             At Ramirez Landscaping, we bring your vision to life while giving fair prices. We have been maintaining and remaking yards for over 15 years all over the bay area
             even having loyal customers since we started. 
-            We are a family owned and operated business that offers various services such as yard maintenance, fencing, irrigation systems, tree-work and more!
+            We are a family owned and operated business that offers various services to help you bloom your yard.
             Each yard is unique so we take the time to hear what our clients are looking for so we can satisfy them while staying in their budget. 
-            Fill out the info below so that our family can start working with you and transforming your yard! 
+            Fill out the form below so that our family can start working with you and transforming your yard! 
         </p> 
+        </div>
+        <div className='serivces-container'>
+            <h2> Services Offered</h2>
+            <div className='services'>
+                <ul>  
+                  <li> Yard Maintenance</li>
+                  <li> Fencing</li>
+                  <li> Irrigation Systems</li>
+                  <li> Tree Work</li>
+                  <li> Landscaping</li>
+                  <li> Sod Installation</li>
+                  <li> Mulching</li>
+                  <li> Planting</li>
+                  <li> Clean Ups </li>
+                </ul>
+            </div>
         </div>
         <Quote/>
     </div>
