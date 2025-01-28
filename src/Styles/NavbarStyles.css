@@ -12,11 +12,10 @@ nav{
     align-items: center;
     text-decoration: none;
 }
-.nav-text .link, .nav-text, .dropbtn, .drop-link{
-    padding: 10px;;
-}
+
 .nav-text .link, .drop-link{
     display: block;
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
