@@ -11,7 +11,7 @@ export default function About() {
         <div className='about-info'>
         <h2> Why Choose Us?</h2>
         <p>
-            At Ramirez Landscaping, we bring your vision to life while giving fair prices. We have been maintaining and remaking yards for over 15 years all over the bay area
+            At Ramirez Landscaping, we bring your vision to life while giving fair prices. We have been maintaining and remaking yards for over 20 years all over the bay area
             even having loyal customers since we started. 
             We are a family owned and operated business that offers various services to help you bloom your yard.
             Each yard is unique so we take the time to hear what our clients are looking for so we can satisfy them while staying in their budget. 
