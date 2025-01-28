@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import Navbar from './Components/Navbar';
 import FooterBar from './Components/FooterBar';
+import ContactPage from './ContactPage';
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
 
         <Route path='/' element={<Home/>}></Route>
         <Route path='/About' element={<About/>}></Route>
-       
+        <Route path='/contact' element={<ContactPage/>}></Route>
       </Routes>
       
       <FooterBar/>
