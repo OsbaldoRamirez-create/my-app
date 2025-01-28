@@ -100,12 +100,12 @@
 }
 .intro-boxes h2{
     color: darkgreen;
-    font-size: 28px;
+    font-size: 31px;
 }
 .intro-boxes p{
     text-align: justify;
-    font-family: 'Monaco', monospace;
-    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
 }
 .content{
     display: flex;
