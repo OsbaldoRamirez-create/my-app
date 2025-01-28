@@ -16,7 +16,7 @@ export default function Home() {
         <div className="intro-boxes">
             <h2>Who are we?</h2>
             <p>
-                Ramirez Landscaping is a family owned and operated business proudly serving Redwood City and all of the bay area for over 15 years. 
+                Ramirez Landscaping is a family owned and operated business proudly serving Redwood City and all of the bay area for over 20 years. 
                 As a full landscaping company, we are passionate about bringing your vision to life. We will work closely with you to ensure each 
                 project is completed as you imagined. We take pride in our attention to detail and our bendable focus on customer satisfaction.
             </p>
