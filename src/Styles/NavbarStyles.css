@@ -3,7 +3,8 @@ nav{
     display: flex;
     justify-content: flex-end;
     height: 50px;
-    padding: 0.5rem 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .nav-text{
