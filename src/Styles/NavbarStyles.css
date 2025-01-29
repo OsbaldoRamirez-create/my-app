@@ -30,6 +30,12 @@ nav{
     background-color: green;
     color: white;
 }
+/* dropdown active navlinks */
+.nav-text .drop-link.active{
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
 
 /* about us navlink */
 .dropbtn{
