@@ -1,0 +1,46 @@
+.maintenance-container{
+    display: grid;
+    justify-content: center;
+}
+
+.maintenance-services{
+    display:block;
+    margin: auto;
+    padding: 20px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    width: 700px;
+}
+.maintenance-services h2{
+    color: darkgreen;
+    font-size: 30px;
+    margin-top: auto;
+
+}
+
+.yard-services ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.yard-services li {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 60px;   
+    font-size: 18px;
+}
+.yard-services li::after{
+    content: '✓';
+    color: green;
+    position: relative;
+}
