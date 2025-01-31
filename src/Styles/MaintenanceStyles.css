@@ -3,6 +3,23 @@
     justify-content: center;
 }
 
+.maintenance-container h1{
+    color: darkgreen;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+.maintenance-info{
+    width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+.maintenance-info p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
 .maintenance-services{
     display:block;
     margin: auto;
