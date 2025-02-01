@@ -21,7 +21,7 @@ export default function MaintenancePage() {
             </p>
         </div>
         <div className='maintenance-services'>
-            <h2> Our services include:</h2>
+            <h2> Our Services Include:</h2>
             <div className='yard-services'>
                 <ul>  
                   <li>Lawn Care</li>
@@ -35,6 +35,25 @@ export default function MaintenancePage() {
                   <li>Shrub and Hedge Trimming</li>
                 </ul>
             </div>
+        </div>
+        <div className='service-area'>
+            <h2> Service Area</h2>
+            <p> Ramirez Landscaping serves clients throughout the West,
+                East and South Bay area, including the following communities and all areas in between</p>
+            <ul>
+                <li>Redwood City</li>
+                <li>San Carlos</li>
+                <li>Woodside</li>
+                <li>Menlo Park</li>
+                <li>Fremont</li>
+                <li>Los Altos</li>
+                <li>San Mateo</li>
+                <li>Belmont</li>
+                <li>Portola Valley</li>
+                <li>Palo Alto</li>
+                <li>Atherton</li>
+                <li>Campbell</li>
+            </ul>
         </div>
         
     </div>
