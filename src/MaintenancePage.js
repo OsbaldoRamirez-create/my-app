@@ -1,6 +1,7 @@
 import React from 'react'
 import './Styles/MaintenanceStyles.css';
 import RamirezLogo from './Images/RamirezLogo.png';
+import Quote from './Components/Quote';
 
 export default function MaintenancePage() {
   return (
@@ -55,7 +56,7 @@ export default function MaintenancePage() {
                 <li>Campbell</li>
             </ul>
         </div>
-        
+        <Quote/>
     </div>
   )
 }
