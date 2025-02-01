@@ -5,7 +5,7 @@ import RamirezLogo from './Images/RamirezLogo.png';
 
 export default function ContactPage() {
   return (
-    <div class="contact-container">
+    <div className="contact-container">
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
         <div className='contact-intro'>
             <h2> Let us serve you!</h2>
