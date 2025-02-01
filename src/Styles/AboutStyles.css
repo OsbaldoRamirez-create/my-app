@@ -1,4 +1,9 @@
 
+.about-container{
+    display: grid;
+    justify-content: center;
+}
+
 .about-container h1{
     color: darkgreen;
     font-size: 40px;
@@ -6,13 +11,11 @@
 }
 
 .about-info{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    width: 800px;
+    padding-bottom: 50px;
 }
 .about-info p{
-    width:560px;
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;   
