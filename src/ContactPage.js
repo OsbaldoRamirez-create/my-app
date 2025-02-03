@@ -2,11 +2,13 @@ import React from 'react'
 import './Styles/ContactStyles.css';
 import Quote from './Components/Quote'
 import RamirezLogo from './Images/RamirezLogo.png';
+import Slideshow from './Components/Slideshow';
 
 export default function ContactPage() {
   return (
     <div className="contact-container">
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
+        <Slideshow/>
         <div className='contact-intro'>
             <h2> Let us serve you!</h2>
             <p>  
