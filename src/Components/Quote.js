@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/QuoteStyles.css';
 
 export default function Quote() {
   return (
