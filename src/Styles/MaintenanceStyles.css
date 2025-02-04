@@ -15,7 +15,7 @@
     text-align: justify;
 }
 .maintenance-info p{
-    font-size: 20px;
+    font-size: 23px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -63,8 +63,13 @@
 }
 
 .service-area{
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
-    padding: 40px 40px 80px 40px;
+    padding: 0px 40px 80px 40px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
 
 }
 
@@ -73,7 +78,7 @@
     color: darkgreen;
 }
 .service-area p{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 40px;
 }
 .service-area ul{
