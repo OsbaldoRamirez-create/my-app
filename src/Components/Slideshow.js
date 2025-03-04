@@ -1,4 +1,5 @@
 import React, {useState, useEffect}from 'react'
+import '../Styles/SlideshowStyles.css';
 import image1 from '../Images/SlabsLandscape.png';
 import image2 from '../Images/RetainingWallAndGrass.png';
 import image3 from '../Images/BackLawn.png';
