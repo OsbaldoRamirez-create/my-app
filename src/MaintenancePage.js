@@ -8,8 +8,8 @@ export default function MaintenancePage() {
     <div className='maintenance-container'>
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
     
-        <h1>Yard Maintenance Services</h1>
         <div className='maintenance-info'>
+            <h1>Yard Maintenance Services</h1>
             <p>
                 At Ramirez Landscaping, we offer a variety of services to help you maintain your yard whether 
                 it's weekly, bi-weekly, or monthly. Our team is committed to enhancing the beauty of your 
