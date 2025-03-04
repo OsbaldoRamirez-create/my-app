@@ -12,7 +12,7 @@
 
 .about-info{ 
     margin: auto;
-    width: 800px;
+    max-width: 800px;
     padding-bottom: 50px;
 }
 .about-info p{
@@ -56,7 +56,8 @@
     padding: 10px;
     border: 1px solid #ddd;
     position: relative;
-    font-size: 19px;
+    font-size: 22px;
+    height: 50px;
 }
 
 .services li::after{
@@ -65,4 +66,18 @@
     position: relative;
     width: 20px;
     text-align: center;
+}
+
+@media(max-width:640px){
+    .about-info{
+        width: 400px;
+    }
+    .serivces-container{
+        width: 400px;
+        padding: 10px;
+    }
+    .services li{
+        padding: 0px;
+        font-size: 16px;
+    }
 }
