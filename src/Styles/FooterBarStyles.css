@@ -14,3 +14,9 @@ footer a:hover{
     color: green;
     text-decoration: underline;
 }
+
+@media(max-width:640px){
+    footer a {
+        margin: 0 10px;
+    }
+}
