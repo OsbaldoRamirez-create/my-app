@@ -124,3 +124,23 @@
         width: 10px;
     }
 }
+@media(max-width:400px){
+    .ramirezLogo{
+        width: 350px;
+    }
+    .slideshow-container{
+        height: 200px;
+    }
+    .slide-text{
+        font-size: 14px;
+        padding: 4px;
+    }
+    .prev, .next{
+        font-size: 16px;
+        padding: 4px;
+    }
+    .dot{
+        height: 8px;
+        width: 8px;
+    }
+}
