@@ -3,20 +3,21 @@
     justify-content: center;
 }
 
-.maintenance-container h1{
+.maintenance-info h1{
     color: darkgreen;
     font-size: 40px;
     margin-top: auto;
 }
 
 .maintenance-info{
-    width: 800px;
+    max-width: 800px;
     margin: 20px auto;
-    text-align: justify;
 }
+
 .maintenance-info p{
     font-size: 23px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
 
 }
 
@@ -26,7 +27,7 @@
     padding: 20px;
     background-color: #e5e5e5;
     border: 1px solid #ccc;
-    width: 700px;
+    max-width: 700px;
 }
 .maintenance-services h2{
     color: darkgreen;
@@ -103,4 +104,33 @@
     content: '•';
     color: green;
     margin-right: 10px;
+}
+@media(max-width:640px){
+    .maintenance-info{
+        width: 400px;
+    }
+    .maintenance-info p{
+        font-size: 19px;
+    }
+    .maintenance-services{
+        width: 400px;
+    }
+    .yard-services li{
+        font-size: 14px;
+    }
+    .service-area{
+        width: 400px;
+        padding: 0px 20px 40px 20px;
+    }
+    .service-area p{
+        font-size: 17px;
+    }
+    .service-area ul{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        
+    }
+    .service-area li{
+        font-size: 16px;
+    }
 }
