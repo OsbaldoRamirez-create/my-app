@@ -20,3 +20,9 @@ footer a:hover{
         margin: 0 10px;
     }
 }
+
+@media(max-width:400px){
+    footer a {
+        margin: 0 5px;
+    }
+}
