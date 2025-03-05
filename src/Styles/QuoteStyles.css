@@ -4,6 +4,7 @@
     align-items: center;
 }
 .quote-container h1{
+    font-size: 40px;
     color: darkgreen;
 }
 
@@ -70,4 +71,9 @@ textarea {
     border: 9px solid #ccc;
     border-radius: 4px;
     resize: none;
+}
+@media(max-width:640px){
+    .quote-container h1{
+        font-size: 30px;
+    }
 }
