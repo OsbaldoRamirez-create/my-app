@@ -68,6 +68,15 @@
     width: 20px;
     text-align: center;
 }
+@media(max-width:860px){
+    .about-info{
+        width: 650px;
+    }
+    .serivces-container{
+        width: 650px;
+    }
+
+}
 
 @media(max-width:640px){
     .about-info{

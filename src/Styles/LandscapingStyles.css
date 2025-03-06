@@ -33,6 +33,15 @@
     margin-top: auto;
     margin-bottom: 40px;
 }
+@media(max-width: 860px){
+    .landscaping-info{
+        width: 700px;
+    }
+    .landscaping-services{
+        width: 700px;
+        padding: 20px 10px;
+    }
+}
 
 @media (max-width:640px){
     .landscaping-info{
