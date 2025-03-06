@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar';
 import FooterBar from './Components/FooterBar';
 import ContactPage from './ContactPage';
 import MaintenancePage from './MaintenancePage';
+import LandscapingPage from './LandscapingPage';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path='/About' element={<About/>}></Route>
         <Route path='/contact' element={<ContactPage/>}></Route>
         <Route path='/maintenance' element={<MaintenancePage/>}></Route>
+        <Route path='/landscaping' element={<LandscapingPage/>}></Route>
       </Routes>
       
       <FooterBar/>
