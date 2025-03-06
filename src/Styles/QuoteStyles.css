@@ -77,3 +77,9 @@ textarea {
         font-size: 30px;
     }
 }
+
+@media(max-width:400px){
+    .quote-container h1{
+        font-size: 27px;
+    }
+}
