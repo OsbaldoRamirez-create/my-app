@@ -1,0 +1,20 @@
+.main-landscaping{
+    display: grid;
+    justify-content: center;
+}
+
+.landscaping-services{
+    display:block;
+    margin: auto;
+    padding: 30px;
+    background-color: #e5e5e5;
+    border: 1px solid #ccc;
+    width: 820px;
+}
+
+.landscaping-services h2{
+    color: darkgreen;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
