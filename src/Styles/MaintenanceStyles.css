@@ -10,7 +10,7 @@
 }
 
 .maintenance-info{
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
 }
 
@@ -24,7 +24,7 @@
 .maintenance-services{
     display:block;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     background-color: #e5e5e5;
     border: 1px solid #ccc;
     max-width: 700px;
@@ -54,8 +54,8 @@
     padding: 10px;
     border: 1px solid #ddd;
     box-sizing: border-box;
-    height: 60px;   
-    font-size: 18px;
+    height: 70px;   
+    font-size: 20px;
 }
 .yard-services li::after{
     content: '✓';
