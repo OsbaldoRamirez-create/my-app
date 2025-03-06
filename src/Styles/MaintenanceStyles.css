@@ -65,8 +65,7 @@
 
 .service-area{
     max-width: 1000px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
     text-align: center;
     padding: 0px 40px 80px 40px;
     background-color: #e5e5e5;
@@ -95,7 +94,7 @@
     font-size: 20px;
     width: 100%;
     position: relative;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .service-area li::before{
@@ -114,20 +113,21 @@
     }
     .maintenance-services{
         width: 400px;
+        padding: 30px 0;
     }
     .yard-services li{
-        font-size: 14px;
+        font-size: 16px;
     }
     .service-area{
         width: 400px;
-        padding: 0px 20px 40px 20px;
+        padding: 0px 0px 40px 0px;
     }
     .service-area p{
         font-size: 17px;
     }
     .service-area ul{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
         
     }
     .service-area li{
