@@ -2,12 +2,14 @@ import React from 'react'
 import Quote from './Components/Quote'
 import RamirezLogo from './Images/RamirezLogo.png';
 import './Styles/LandscapingStyles.css';
+import Slideshow from './Components/Slideshow';
 
 
 export default function LandscapingPage() {
   return (
     <div className='main-landscaping'>
     <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
+    <Slideshow/>
         
     <div className='landscaping-info'>
         <h1> Landscaping Services </h1>
