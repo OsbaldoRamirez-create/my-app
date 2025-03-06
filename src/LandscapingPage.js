@@ -11,7 +11,18 @@ export default function LandscapingPage() {
         
     <div className='landscaping-info'>
         <h1> Landscaping Services </h1>
-        <p> When transforming your yard it takes a great and trustable team to complete the project as you imagined it.</p>
+        <p> When transforming your yard it takes a great and trustable team to complete the project as you imagined it.
+            At Ramirez Landscaping, we understand that each yard is a reflection of its owner's personality and dreams.
+            Thats why we commit to not only meeting your expectations but exceeding them. 
+            Having a team that listens to your needs and wants is key to having a successful project. Our family works closely with you 
+            throughout the entire project incase there is any adjustments or ideas you come up with that need to be made. 
+            We have been working with clients for over 20 years and have been able to bring their vision to life. Whether
+            you are looking for a full yard transformation, inviting outdoor living areas, low maintenance landscapes, or just a simple clean up,
+            our team is equipped with the latest tools and knowledge to transform your yard. Choose Ramirez Landscaping to give your outdoor space
+            the care and attention it deserves. Let us bloom your yard into a vibrant, beautiful landscape that you can enjoy for years to come. 
+            Fill out the information below to get a free quote and start your project ASAP! 
+
+        </p>
 
 
     </div>
