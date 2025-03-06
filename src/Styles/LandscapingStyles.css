@@ -2,6 +2,21 @@
     display: grid;
     justify-content: center;
 }
+.landscaping-info{
+    width: 950px;
+    margin: 30px auto;
+}
+.landscaping-info h1{
+    color: darkgreen;
+    font-size: 40px;
+    margin-top: auto;
+}
+.landscaping-info p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
 
 .landscaping-services{
     display:block;
@@ -17,4 +32,24 @@
     font-size: 30px;
     margin-top: auto;
     margin-bottom: 40px;
+}
+
+@media (max-width:640px){
+    .landscaping-info{
+        width: 400px;
+    }
+    .landscaping-services{
+        width: 400px;
+        padding: 20px 10px;
+    }
+}
+
+@media(max-width:400px){
+    .landscaping-info{
+        width: 320px;
+    }
+    .landscaping-services{
+        width: 320px;
+        padding: 20px 10px;
+    }
 }
