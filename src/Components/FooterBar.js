@@ -7,7 +7,7 @@ export default function FooterBar() {
     <footer>
         <NavLink to="/">Home</NavLink>                
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/services">Services</NavLink>
+        {/* <NavLink to="/services">Services</NavLink> */}
         <NavLink to="/contact">Contact us</NavLink>
     </footer>
   )
