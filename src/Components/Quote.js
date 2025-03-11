@@ -48,13 +48,25 @@ export default function Quote() {
                     <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email*" required/>
                 </div>
                 <div className="form-class">
-                    <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject*" required/>
+                    <select id='subject' name='subject' value={formData.subject} onChange={handleChange} required>
+                    <option value='' disabled >Select a Service*</option>
+                    <option value='Yard Maintenance'>Yard Maintenance</option>
+                    <option value='Fencing'>Fencing</option>
+                    <option value='Irrigation Systems'>Irrigation Systems</option>
+                    <option value='Tree Work'>Tree Work</option>
+                    <option value='Landscaping'>Landscaping</option>
+                    <option value='Sod Installation'>Sod Installation</option>
+                    <option value='Mulching'>Mulching and Planting</option>
+                    <option value='Other'>Other</option>
+
+                    </select>
                     <h4> *Free quotes only in the Bay Area CA all other locations subject to a fee depending on location</h4> 
+
                 </div>
                 </div>
             <div className="description-container">
                 <div className="form-class">
-                    <textarea id="description" name="description" value={formData.description} onChange={handleChange} placeholder="Description:"></textarea>
+                    <textarea id="description" name="description" value={formData.description} onChange={handleChange} placeholder="Description:" required></textarea>
                 </div>
             </div>
         <div className="btn-container">
