@@ -10,6 +10,11 @@ footer a{
     margin: 0 1rem;
     font-size: 1.2rem;
 }
+footer a.active{
+    color: green;
+    text-decoration: underline;
+}
+
 footer a:hover{
     color: green;
     text-decoration: underline;
