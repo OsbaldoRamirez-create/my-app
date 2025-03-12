@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ramirez Landscaping
 
-## Available Scripts
+Welcome to the Ramirez Landscaping this website is built using ReactJs for frontend, CSS for styling, and Python for server. Designed for potential customers in the Bay Area, CA, this project highlights a family-owned landscaping business with more than 20 years of experience. We offer a variety of services from yard maintenance to custom fencing backed by a legacy of loyal and satisfited clients. 
 
-In the project directory, you can run:
+This codebase showcases a user-friendly interface, where future clients can explore our work, and request a consultation. 
 
-### `npm start`
+## Features
+This website was developed with the customer in mind, offering a seamless user experience and easy navigation through our pages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home Page: Get to know us and learn why we are the perfect family to trust with your yard.
+- About Us Page: Take a look at some of the services we offer to make your yard beautiful.
+- Contact/Quote Page: Easily reach out to us by filling out your info correctly to schedule a consultation.
+- Landscaping Page: Learn and discover what we offer for our Landscaping services.
+- Maintenance Page: Understan why our reputation is built on Maintenance services and discover our service areas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+### Home Page
+![image](https://github.com/user-attachments/assets/47f19cdb-a8c6-4c58-b84d-50803df63e98)
+![image](https://github.com/user-attachments/assets/9cd54f37-6c80-4964-9ff3-633fa9042a59)
+![image](https://github.com/user-attachments/assets/30916e83-8459-4116-b869-35005cb56cb5)
+### Navigation Bar
+![image](https://github.com/user-attachments/assets/b2af39b1-852a-417e-b008-d32a33254bf7)
+### Footer Bar
+![image](https://github.com/user-attachments/assets/de200f7f-3ae1-4fdd-862e-95eae849c1c4)
+### About us Page
+![image](https://github.com/user-attachments/assets/92f961b5-e205-4b76-8894-31906c8f60ae)
+![image](https://github.com/user-attachments/assets/8aec8179-ffc2-461b-ba0f-6bd2ba8211cd)
+### Contact Page
+![image](https://github.com/user-attachments/assets/5d1fbc4d-eaa1-42d7-9738-6008bcaf6a26)
+### Maintenance Page
+![image](https://github.com/user-attachments/assets/74130578-8804-4479-b33a-d314603253a2)
+![image](https://github.com/user-attachments/assets/ae16aeb6-e9a5-450a-b71a-149e1858b8e2)
+### Landscaping Page
+![image](https://github.com/user-attachments/assets/fe84ab62-43ed-4368-ab67-2ae89c6c21f5)
+![image](https://github.com/user-attachments/assets/37ba8a07-e661-4040-8bf7-4d7e759f793f)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Client:** ReactJS, CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Server:** Python, Flask, smtplib, MIMEText
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Authors
 
-## Learn More
+- [@ORamirezz](https://www.github.com/OsbaldoRamirez-create)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
