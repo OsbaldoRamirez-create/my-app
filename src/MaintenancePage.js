@@ -2,12 +2,14 @@ import React from 'react'
 import './Styles/MaintenanceStyles.css';
 import RamirezLogo from './Images/RamirezLogo.png';
 import Quote from './Components/Quote';
+import Slideshow from './Components/Slideshow';
+import { yardImages2 } from './Components/SlideImages';
 
 export default function MaintenancePage() {
   return (
     <div className='maintenance-container'>
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
-    
+        <Slideshow images={yardImages2}/>    
         <div className='maintenance-info'>
             <h1>Yard Maintenance Services</h1>
             <p>

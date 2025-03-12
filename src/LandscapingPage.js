@@ -3,13 +3,13 @@ import Quote from './Components/Quote'
 import RamirezLogo from './Images/RamirezLogo.png';
 import './Styles/LandscapingStyles.css';
 import Slideshow from './Components/Slideshow';
-
+import { yardImages2 } from './Components/SlideImages';
 
 export default function LandscapingPage() {
   return (
     <div className='main-landscaping'>
     <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
-    <Slideshow/>
+    <Slideshow images={yardImages2}/>
         
     <div className='landscaping-info'>
         <h1> Landscaping Services </h1>

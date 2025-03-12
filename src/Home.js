@@ -6,12 +6,13 @@ import './Styles/HomeStyles.css';
 import Slideshow from './Components/Slideshow';
 import Quote from './Components/Quote';
 import { NavLink } from 'react-router-dom';
+import {yardImages} from './Components/SlideImages';
 
 export default function Home() {
   return (
     <div className='main-home'> 
         <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
-        <Slideshow/>
+        <Slideshow images={yardImages}/>
         <div className="intro">
         <div className="intro-boxes">
             <h2>Who are we?</h2>
