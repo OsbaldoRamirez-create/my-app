@@ -1,6 +1,5 @@
-import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
+import React, { useEffect } from 'react';
+import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import About from './About';
@@ -10,9 +9,19 @@ import ContactPage from './ContactPage';
 import MaintenancePage from './MaintenancePage';
 import LandscapingPage from './LandscapingPage';
 
+//scroll page to top when navigating to a new page
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  },[pathname]);
+  return null;
+};
+
 export default function App() {
   return (
     <Router>
+      <ScrollToTop/>
     <div className="App">
       <Navbar/>
      
