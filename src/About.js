@@ -2,10 +2,12 @@ import React from 'react'
 import Quote from './Components/Quote'
 import Slideshow from './Components/Slideshow'
 import './Styles/AboutStyles.css';
+import RamirezLogo from './Images/RamirezLogo.png' 
 
 export default function About() {
   return (
     <div className="about-container">
+        <img src={RamirezLogo} alt='Ramirez Logo' className='ramirezLogo'/>
         <h1> About Us</h1>
         <Slideshow/>
         <div className='about-info'>
