@@ -1,18 +1,16 @@
 
 # Ramirez Landscaping
 
-Welcome to the Ramirez Landscaping this website is built using ReactJs for frontend, CSS for styling, and Python for server. Designed for potential customers in the Bay Area, CA, this project highlights a family-owned landscaping business with more than 20 years of experience. We offer a variety of services from yard maintenance to custom fencing backed by a legacy of loyal and satisfited clients. 
-
-This codebase showcases a user-friendly interface, where future clients can explore our work, and request a consultation. 
+Welcome to the Ramirez Landscaping website this is built using ReactJs for frontend, CSS for styling, and Python for server. Designed for potential customers in the Bay Area, CA, this project highlights a family-owned landscaping business with more than 20 years of experience. We offer a variety of services from yard maintenance to custom fencing backed by a legacy of loyal and satisfited clients. This codebase showcases a user-friendly interface, where future clients can explore our work, and request a consultation. 
 
 ## Features
 This website was developed with the customer in mind, offering a seamless user experience and easy navigation through our pages:
 
-- Home Page: Get to know us and learn why we are the perfect family to trust with your yard.
-- About Us Page: Take a look at some of the services we offer to make your yard beautiful.
-- Contact/Quote Page: Easily reach out to us by filling out your info correctly to schedule a consultation.
-- Landscaping Page: Learn and discover what we offer for our Landscaping services.
-- Maintenance Page: Understan why our reputation is built on Maintenance services and discover our service areas.
+- **Home Page:** Get to know us and learn why we are the perfect family to trust with your yard.
+- **About Us Page:** Take a look at some of the services we offer to make your yard beautiful.
+- **Contact/Quote Page:** Easily reach out to us by filling out your info correctly to schedule a consultation.
+- **Landscaping Page:** Learn and discover what we offer for our Landscaping services.
+- **Maintenance Page:** Understand why our reputation is built on Maintenance services and discover our service areas.
 
 ## Screenshots
 
