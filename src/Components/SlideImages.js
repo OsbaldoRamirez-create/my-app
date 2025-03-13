@@ -20,7 +20,7 @@ export const yardImages = [{src: image1, alt:"Front Yard Slabs", text:"Rocks Sla
 export const yardImages2 = [
     {src: image6, alt:"Front yard sod", text:"New Front Yard Sod"},
     {src: image7, alt:"Long Fence", text:"70 Foot Fence"},
-    {src: image8, alt:"Front Yard mulch", text:"Front Yard Mulch and clean-up"},
+    {src: image8, alt:"Front Yard mulch", text:"Front Yard Mulch and Clean-Up"},
     {src: image9, alt:"Brick Patio", text:"Brick Patio"},
     {src: image10, alt:"Clean Tree", text:"Perfectly Trimmed Tree"}
     ]
