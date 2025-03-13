@@ -2,6 +2,12 @@
    display: grid;
    justify-content: center;
 }
+.contact-container > h1{
+    color: darkgreen;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 .contact-intro{
     margin: auto;
     text-align: left;
