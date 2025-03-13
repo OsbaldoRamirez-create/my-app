@@ -3,14 +3,14 @@ import Quote from './Components/Quote'
 import Slideshow from './Components/Slideshow'
 import './Styles/AboutStyles.css';
 import RamirezLogo from './Images/RamirezLogo.png' 
-import {yardImages} from './Components/SlideImages';
+import {yardImages2} from './Components/SlideImages';
 
 export default function About() {
   return (
     <div className="about-container">
         <img src={RamirezLogo} alt='Ramirez Logo' className='ramirezLogo'/>
         <h1> About Us</h1>
-        <Slideshow images={yardImages}/>
+        <Slideshow images={yardImages2}/>
         <div className='about-info'>
         <h2> Why Choose Us?</h2>
         <p>
