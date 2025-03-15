@@ -8,6 +8,7 @@ import FooterBar from './Components/FooterBar';
 import ContactPage from './ContactPage';
 import MaintenancePage from './MaintenancePage';
 import LandscapingPage from './LandscapingPage';
+import NoPage from './NoPage';
 
 //scroll page to top when navigating to a new page
 const ScrollToTop = () => {
@@ -32,6 +33,7 @@ export default function App() {
         <Route path='/contact' element={<ContactPage/>}></Route>
         <Route path='/maintenance' element={<MaintenancePage/>}></Route>
         <Route path='/landscaping' element={<LandscapingPage/>}></Route>
+        <Route path="*" element={<NoPage/>}/>
       </Routes>
       
       <FooterBar/>
