@@ -18,7 +18,7 @@ export default function Quote() {
             });
             const result = await response.json();
             if(response.ok){
-                alert('Your quote was sent successfully!');
+                alert("Your quote was sent successfully! We'll get back to you soon");
                 //clear form
                 setFormData({name: '', phone: '', email: '', subject:'', description: ''});
             }
@@ -27,7 +27,7 @@ export default function Quote() {
             }
         }
         catch(error){
-                alert('An error occurred. Please try again later.');
+                alert('An error occurred. Please try again later. Possibly to many requests');
             }
     };
 
@@ -56,7 +56,7 @@ export default function Quote() {
                     <option value='Tree Work'>Tree Work</option>
                     <option value='Landscaping'>Landscaping</option>
                     <option value='Sod Installation'>Sod Installation</option>
-                    <option value='Mulching'>Mulching and Planting</option>
+                    <option value='Mulching and Planting'>Mulching and Planting</option>
                     <option value='Other'>Other</option>
 
                     </select>
