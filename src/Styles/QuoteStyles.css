@@ -49,7 +49,10 @@
 }
 .form-class {
     margin-bottom: 10px;
+    position: relative; /* for error message */
+    min-height: 55px;
 }
+
 /* input boxes */
 .form-class input, .form-class textarea {
     width: 100%;
@@ -60,14 +63,26 @@
     border-color: transparent;
     background-color: lightgray;
 }
+.input-error{
+    border-color: red !important;
+}
+.error{
+    position: absolute;
+    color: red;
+    margin: 3px;
+    top: 0;
+    justify-self: anchor-center;
+    transform: translateY(-120%); /* position right above input box */
+}
+
 .form-class input::placeholder, .form-class textarea::placeholder {
     font-size: 15px;
     color: rgb(75, 74, 74);
-
 }
+
 textarea {
     padding: 10px;
-    height: 200px;
+    height: 240px;
     border: 9px solid #ccc;
     border-radius: 4px;
     resize: none;
