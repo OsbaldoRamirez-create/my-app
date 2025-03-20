@@ -17,7 +17,10 @@ export default function Quote() {
             case 'name':
                 if(value.length < 3){
                     newErrs.name = 'Name must be at least 3 characters long';
-                }else{
+                }else if(!/^[a-zA-Z\s]+$/.test(value)){
+                    newErrs.name = 'Name must only contain letters and spaces';
+                }
+                else{
                     delete newErrs.name;
                 }
                 break;
