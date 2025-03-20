@@ -18,7 +18,7 @@ useEffect(() => {
           {images.map((image, index) => (
             <div key={index} className= {`slide ${index === slideIndex ? 'active': ''}`}> 
             <img src={image.src} alt={image.alt}/>
-            <div className='slide-text'>{image.text}</div>
+          {/*   <div className='slide-text'>{image.text}</div> */}
             </div>
           ))}
   

@@ -3,9 +3,9 @@
     justify-content: center;
 }
 
-.maintenance-info h1{
+.maintenance-container > h1{
     color: darkgreen;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: auto;
 }
 
@@ -13,12 +13,18 @@
     max-width: 900px;
     margin: 20px auto;
 }
+.maintenance-info h3{
+    color: darkgreen;
+    font-size: 40px;
+    margin: 20px auto;
+    width: fit-content;
+}
 
 .maintenance-info p{
     font-size: 23px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     text-align: justify;
-
+    line-height: 33px;
 }
 
 .maintenance-services{

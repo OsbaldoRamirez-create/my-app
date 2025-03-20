@@ -10,20 +10,20 @@
 }
 .contact-intro{
     margin: auto;
-    text-align: left;
     max-width: 850px;
 
 }
 .contact-intro h2{
     color: darkgreen;
-    font-size: 40px;
-    margin: 20px 0;
+    font-size: 45px;
+    margin: 20px auto;
 }
 
 .contact-intro p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     text-align: justify;
     font-size: 23px;
+    line-height: 33px;
 }
 
 @media(max-width:860px){

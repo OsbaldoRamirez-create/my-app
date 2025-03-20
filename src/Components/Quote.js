@@ -34,7 +34,7 @@ export default function Quote() {
                 //email validation for almost all email formats
                 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 if(!emailRegex.test(value)){
-                    newErrs.email = 'Please enter a valid email';
+                    newErrs.email = 'Please enter a valid email (e.g. example@gmail.com)';
                 }else{
                     delete newErrs.email;
                 }

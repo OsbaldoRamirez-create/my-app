@@ -6,16 +6,22 @@
     width: 950px;
     margin: 30px auto;
 }
-.landscaping-info h1{
+.main-landscaping > h1{
+    color: darkgreen;
+    font-size: 50px;
+    margin-top: auto;
+}
+.landscaping-info h3{
     color: darkgreen;
     font-size: 40px;
-    margin-top: auto;
+    margin: 20px auto;
+    width: fit-content;
 }
 .landscaping-info p{
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 23px;
+    line-height: 33px;
 }
 
 .landscaping-services{
@@ -46,6 +52,9 @@
 @media (max-width:640px){
     .landscaping-info{
         width: 400px;
+    }
+    .landscaping-info p{
+        font-size: 19px;
     }
     .landscaping-services{
         width: 400px;

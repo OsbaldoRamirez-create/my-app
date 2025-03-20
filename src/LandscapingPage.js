@@ -9,10 +9,11 @@ export default function LandscapingPage() {
   return (
     <div className='main-landscaping'>
     <img src={RamirezLogo} className="ramirezLogo"alt="Logo"/>
+    <h1> Landscaping Services </h1>
     <Slideshow images={yardImages}/>
-        
+
     <div className='landscaping-info'>
-        <h1> Landscaping Services </h1>
+      <h3>What It Takes To Transform Your Yard </h3>
         <p> When transforming your yard it takes a great and trustable team to complete the project as you imagined it.
             At Ramirez Landscaping, we understand that each yard is a reflection of its owner's personality and dreams.
             Thats why we commit to not only meeting your expectations but exceeding them. 
@@ -38,7 +39,7 @@ export default function LandscapingPage() {
                   <li> Tree Work</li>
                   <li> Fruit Trees & Small Planting</li>
                   <li> Sod Installation</li>
-                  <li> Pavers and Bricks</li>
+                  <li> Pavers</li>
                   <li> Garden & Planter Boxes</li>
                   <li> Retaining Walls</li>
                   <li> Full Yard Clean Ups</li>
