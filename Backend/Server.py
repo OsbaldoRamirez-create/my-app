@@ -1,0 +1,86 @@
+from flask import Flask, request, jsonify, send_from_directory
+import smtplib
+from flask_cors import CORS
+from dotenv import load_dotenv
+from email.mime.text import MIMEText
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+import os
+from email.utils import formataddr
+from whitenoise import WhiteNoise
+
+loaded = load_dotenv()
+print("Server.py version: Unified catch-all 2025-03-27")
+
+app = Flask(__name__, static_folder='../frontend/build')
+app.wsgi_app = WhiteNoise(app.wsgi_app, root='../frontend/build')
+print(f"Static folder resolved to: {os.path.abspath(app.static_folder)}")
+CORS(app)
+
+limiter = Limiter(
+    app = app,
+    key_func=get_remote_address
+)
+
+EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
+EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
+@app.errorhandler(429)
+def ratelimit_handler(e):
+    return jsonify({
+        'error': 'Rate Limited Exceeded',
+        'message':f"You've hit the limit:[e.description]. Try again later"}), 429
+
+
+# Serve static files from the React app
+@app.route('/', defaults={'path':''} )
+@app.route('/<path:path>')
+def catch(path):
+    full_path = os.path.join(app.static_folder, path)
+ #   print(f"Requested: {path}, Full: {full_path}, Exists: {os.path.exists(full_path)}")
+    if path != "" and os.path.isfile(full_path):
+        return send_from_directory(app.static_folder, path)
+    print(f"Serving index.html for path: {path}")
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/send-quote', methods=['POST'])
+@limiter.limit("4 per day; 1 per minute") #limit for form only
+def send_quote():
+    data = request.get_json()
+
+    name = data.get('name')
+    phone = data.get('phone')   
+    email = data.get('email')
+    subject = data.get('subject')
+    description = data.get('description')
+
+    if not all([name, phone, email, subject, description]):
+        return jsonify({'message': 'missing data'}), 400
+
+
+    body = f"Name: {name}\nPhone: {phone}\nEmail: {email}\nSubject: {subject}\nMessage: {description}"
+    msg = MIMEText(body)
+    msg['Subject'] = f"Quote Request from {name} for {subject}" 
+    msg['From'] = EMAIL_ADDRESS
+    msg['To'] = EMAIL_ADDRESS
+
+    # Send email
+    try:
+        with smtplib.SMTP('smtp.gmail.com', 587) as server:
+            server.starttls()
+            server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+            server.send_message(msg)
+
+        #print(data)
+        return jsonify({
+            'message': f"Successfully sent quote! "
+            "We'll get back to you soon"}), 200
+    
+    except Exception as e:
+        return jsonify({'error': f'error sending email:{str(e)}'}), 500
+    
+
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+#    debug = false for production, true for development
+    app.run( host='0.0.0.0', debug=False , port=port)
