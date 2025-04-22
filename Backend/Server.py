@@ -8,12 +8,15 @@ from flask_limiter.util import get_remote_address
 import os
 from email.utils import formataddr
 from whitenoise import WhiteNoise
+from pathlib import Path
 
 loaded = load_dotenv()
 print("Server.py version: Unified catch-all 2025-03-27")
+BASE_DIR = Path(__file__).resolve().parent.parent
+FRONTEND_BUILD = BASE_DIR / 'build' 
 
-app = Flask(__name__, static_folder='../frontend/build')
-app.wsgi_app = WhiteNoise(app.wsgi_app, root='../frontend/build')
+app = Flask(__name__, static_folder=str(FRONTEND_BUILD))
+app.wsgi_app = WhiteNoise(app.wsgi_app, root=str(FRONTEND_BUILD))
 print(f"Static folder resolved to: {os.path.abspath(app.static_folder)}")
 CORS(app)
 
