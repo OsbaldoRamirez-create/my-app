@@ -27,6 +27,11 @@ limiter = Limiter(
 
 EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
 EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
+EMAIL_HOST=os.getenv('EMAIL_HOST', 'smtp.gmail.com')
+EMAIL_PORT=os.getenv('EMAIL_PORT', 587)
+EMAIL_USE_TLS=os.getenv('EMAIL_USE_TLS', 'True') == 'True'
+
+
 @app.errorhandler(429)
 def ratelimit_handler(e):
     return jsonify({
@@ -68,18 +73,22 @@ def send_quote():
 
     # Send email
     try:
-        with smtplib.SMTP('smtp.gmail.com', 587) as server:
-            server.starttls()
+        with smtplib.SMTP(EMAIL_HOST, EMAIL_PORT) as server:
+            if EMAIL_USE_TLS:
+                server.starttls()
             server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             server.send_message(msg)
 
+        app.logger.info(f"Succesfully sent email from {formataddr((name, email))}")
         #print(data)
         return jsonify({
-            'message': f"Successfully sent quote! "
-            "We'll get back to you soon"}), 200
+            'message': f"Successfully sent quote! We'll get back to you soon"}), 200
     
     except Exception as e:
-        return jsonify({'error': f'error sending email:{str(e)}'}), 500
+        app.logger.error(f"Error sending email: {str(e)}")
+        return jsonify({'message': f'Failed to send quote. Try again later',
+                'error': str(e)
+        }), 500
     
 
 
