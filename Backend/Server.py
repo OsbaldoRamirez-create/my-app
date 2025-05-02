@@ -9,6 +9,8 @@ import os
 from email.utils import formataddr
 from whitenoise import WhiteNoise
 from pathlib import Path
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
 loaded = load_dotenv()
 print("Server.py version: Unified catch-all 2025-03-27")
@@ -26,10 +28,6 @@ limiter = Limiter(
 )
 
 EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
-EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
-EMAIL_HOST=os.getenv('EMAIL_HOST', 'smtp.gmail.com')
-EMAIL_PORT=os.getenv('EMAIL_PORT', 587)
-EMAIL_USE_TLS=os.getenv('EMAIL_USE_TLS', 'True') == 'True'
 
 
 @app.errorhandler(429)
@@ -64,7 +62,31 @@ def send_quote():
     if not all([name, phone, email, subject, description]):
         return jsonify({'message': 'missing data'}), 400
 
+    email_subject = f"Quote Request from {name} for {subject}"
 
+    email_body =Mail(
+    from_email=EMAIL_ADDRESS,
+    to_emails=EMAIL_ADDRESS,
+    subject=email_subject,
+    html_content=f"""
+    <p>Name: {name}</p>
+    <p>Phone: {phone}</p>
+    <p>Email: {email}</p>
+    <p>Subject: {subject}</p>
+    <p>Message: {description}</p>
+    """ )
+    try:
+        #Send email using SendGrid
+        sg = SendGridAPIClient(os.getenv('SENDGRID_API_KEY'))
+        response = sg.send(email_body)
+        app.logger.info(f"Succesfully sent email from {formataddr((name, email))}")
+        return jsonify({
+            'message': f"Successfully sent quote! We'll get back to you soon"}), 200
+    except Exception as e:
+        app.logger.error(f"Error sending email: {str(e)}")
+        return "Failed to send quote", 500
+
+''' Send emails using SMTP Example 
     body = f"Name: {name}\nPhone: {phone}\nEmail: {email}\nSubject: {subject}\nMessage: {description}"
     msg = MIMEText(body)
     msg['Subject'] = f"Quote Request from {name} for {subject}" 
@@ -83,13 +105,13 @@ def send_quote():
         #print(data)
         return jsonify({
             'message': f"Successfully sent quote! We'll get back to you soon"}), 200
-    
+
     except Exception as e:
         app.logger.error(f"Error sending email: {str(e)}")
         return jsonify({'message': f'Failed to send quote. Try again later',
                 'error': str(e)
         }), 500
-    
+'''    
 
 
 if __name__ == '__main__':
