@@ -82,7 +82,11 @@ def send_quote():
             'message': f"Successfully sent quote! We'll get back to you soon"}), 200
     except Exception as e:
         app.logger.error(f"Error sending email: {str(e)}")
-        return "Failed to send quote", 500
+        if hasattr(e, 'body'):
+            app.logger.error(f"Sendgrid Error body: {e.body}")
+        if hasattr(e, 'headers'):
+            app.logger.error(f"Sendgrid Error headers: {e.headers}")
+        return jsonify ({'error': str(e)}), 500
 
 ''' Send emails using SMTP Example 
     body = f"Name: {name}\nPhone: {phone}\nEmail: {email}\nSubject: {subject}\nMessage: {description}"
