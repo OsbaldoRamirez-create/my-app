@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify, send_from_directory
-import smtplib
 from flask_cors import CORS
 from dotenv import load_dotenv
-from email.mime.text import MIMEText
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 import os
