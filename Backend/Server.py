@@ -10,7 +10,12 @@ from pathlib import Path
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 import redis
+import logging
 
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Load environment variables from .env file
 loaded = load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_BUILD = BASE_DIR / 'build' 
@@ -22,10 +27,15 @@ CORS(app)
 
 
 REDIS_URL= os.getenv('REDISCLOUD_URL')
+try:
+    #initialize Redis client
+    redis_client = redis.Redis.from_url(REDIS_URL)
+    ping_result = redis_client.ping()
+    logger.info(f"Redis connection: {ping_result}") # Check if Redis is reachable
+except redis.RedisError as e:
+    logger.error(f"Redis connection error: {e}")
+    raise
 
-
-#initialize Redis client
-redis_client = redis.Redis.from_url(REDIS_URL)
 # Redis connection
 
 
