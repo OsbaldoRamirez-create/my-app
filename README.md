@@ -39,7 +39,7 @@ This website was developed with the customer in mind, offering a seamless user e
 
 **Client:** ReactJS, CSS
 
-**Server:** Python, Flask, smtplib, MIMEText
+**Server:** Flask, SendGrid, Redis
 
 
 
