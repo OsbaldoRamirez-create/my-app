@@ -20,21 +20,22 @@ app.wsgi_app = WhiteNoise(app.wsgi_app, root=str(FRONTEND_BUILD))
 print(f"Static folder resolved to: {os.path.abspath(app.static_folder)}")
 CORS(app)
 
-EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
+
 REDIS_URL= os.getenv('REDISCLOUD_URL')
 
-redis_client = redis.Redis.from_url(REDIS_URL, ssl_cert_reqs=None)
+
+#initialize Redis client
+redis_client = redis.Redis.from_url(REDIS_URL)
 # Redis connection
 
 
 limiter = Limiter(
     app = app,
     key_func=get_remote_address,
-    storage_uri=REDIS_URL,
-    storage_options={'ssl_cert_reqs': None} #Handle tls if needed
+    storage_uri=REDIS_URL
 )
 
-
+EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
 
 
 @app.errorhandler(429)
