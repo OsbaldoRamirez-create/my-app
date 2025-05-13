@@ -22,7 +22,6 @@ FRONTEND_BUILD = BASE_DIR / 'build'
 
 app = Flask(__name__, static_folder=str(FRONTEND_BUILD))
 app.wsgi_app = WhiteNoise(app.wsgi_app, root=str(FRONTEND_BUILD))
-print(f"Static folder resolved to: {os.path.abspath(app.static_folder)}")
 CORS(app)
 
 
@@ -62,11 +61,10 @@ def catch(path):
     full_path = os.path.join(app.static_folder, path)
     if path != "" and os.path.isfile(full_path):
         return send_from_directory(app.static_folder, path)
-    print(f"Serving index.html for path: {path}")
     return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/send-quote', methods=['POST'])
-@limiter.limit("4 per day; 1 per minute") #limit for form only
+@limiter.limit("2 per day; 1 per minute") #limit for form only
 def send_quote():
     data = request.get_json()
 
@@ -96,7 +94,6 @@ def send_quote():
         #Send email using SendGrid
         sg = SendGridAPIClient(os.getenv('SENDGRID_API_KEY'))
         response = sg.send(email_body)
-        app.logger.info(f"Succesfully sent email from {formataddr((name, email))}")
         return jsonify({
             'message': f"Successfully sent quote! We'll get back to you soon"}), 200
     except Exception as e:
