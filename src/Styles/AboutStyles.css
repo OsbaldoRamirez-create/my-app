@@ -29,7 +29,7 @@
     margin-bottom: 0px;
 }
 
-.serivces-container{
+.services-container{
     display:block;
     margin: auto;
     padding: 20px;
@@ -37,7 +37,7 @@
     border: 1px solid #ccc;
     width: 800px;
 }
-.serivces-container h2{
+.services-container h2{
     color: darkgreen;
     font-size: 30px;
     margin: 20px 0;
@@ -74,17 +74,17 @@
     .about-info{
         width: 650px;
     }
-    .serivces-container{
+    .services-container{
         width: 650px;
     }
 
 }
 
-@media(max-width:640px){
+@media(max-width:700px){
     .about-info{
         width: 400px;
     }
-    .serivces-container{
+    .services-container{
         width: 400px;
         padding: 10px;
     }
