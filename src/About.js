@@ -1,16 +1,20 @@
 import React from 'react'
 import Quote from './Components/Quote'
-import Slideshow from './Components/Slideshow'
+/* import Slideshow from './Components/Slideshow' */
 import './Styles/AboutStyles.css';
 import RamirezLogo from './Images/RamirezLogo.png' 
-import {yardImages2} from './Components/SlideImages';
+/* import {yardImages2} from './Components/SlideImages'; */
+import BeforeAfterSlider from './Components/BeforeAfterSlider';
+import before from './Images/BeforeFencee.png';
+import after from './Images/AfterFence.png';
 
 export default function About() {
   return (
     <div className="about-container">
         <img src={RamirezLogo} alt='Ramirez Logo' className='ramirezLogo'/>
         <h1> About Us</h1>
-        <Slideshow images={yardImages2}/>
+        <BeforeAfterSlider beforeImage={before} afterImage={after}/>
+        {/* <Slideshow images={yardImages2}/> */}
         <div className='about-info'>
         <h2> Why Choose Us?</h2>
         <p>
@@ -21,7 +25,7 @@ export default function About() {
             Fill out the form below so that our family can start working with you and transforming your yard! 
         </p> 
         </div>
-        <div className='serivces-container'>
+        <div className='services-container'>
             <h2> Services Offered</h2>
             <div className='services'>
                 <ul>  
