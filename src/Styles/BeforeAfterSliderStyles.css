@@ -52,7 +52,7 @@ transition: background-color 0.3s ease;
 .handle{
     position: absolute;
     font-size: 40px;
-    gap: 10px;
+    gap: 5px;
     bottom: 0px;
     display: flex;
     color: white;
