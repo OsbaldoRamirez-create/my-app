@@ -26,9 +26,11 @@ left: 0;
 .after-img-div{
 position: absolute;
 top: 0;
+width: 100%; /* full width of slider */
 height: 100%;
 overflow: hidden;
 z-index: 2;
+clip-path: inset(0 0 0 var(--divider-position)); /* clip the right side of the image */
 }
 
 .slider-handle{
@@ -46,6 +48,7 @@ align-items: center;
 justify-content: center;
 z-index: 10;
 transition: background-color 0.3s ease;
+left: var(--divider-position); /* position handle */
 }
 
 .handle{
