@@ -5,8 +5,8 @@ import './Styles/AboutStyles.css';
 import RamirezLogo from './Images/RamirezLogo.png' 
 /* import {yardImages2} from './Components/SlideImages'; */
 import BeforeAfterSlider from './Components/BeforeAfterSlider';
-import before from './Images/BeforeFencee.png';
-import after from './Images/AfterFence.png';
+import before from './Images/BeforeAcImg.jpg';
+import after from './Images/AfterAcImg.jpg';
 
 export default function About() {
   return (
