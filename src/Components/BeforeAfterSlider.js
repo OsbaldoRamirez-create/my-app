@@ -44,10 +44,11 @@ export default function BeforeAfterSlider({beforeImage, afterImage}) {
     onMouseUp={stopDragging}
     onMouseLeave={stopDragging}
     onTouchMove={handleMove}
-    onTouchEnd={stopDragging}    
+    onTouchEnd={stopDragging}  
+    style={{"--divider-position": `${dividerPosition}%`}}  
     >
       <img src={beforeImage} alt="Before" className='before-image' />
-      <div className='after-img-div' style={{width:`${100 - dividerPosition}%`, left:`${dividerPosition}%`}}>
+      <div className='after-img-div'>
       <img src={afterImage} alt="After" className='after-image' />
       </div>
       <div className='slider-handle'
