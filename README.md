@@ -4,7 +4,7 @@
 Welcome to the Ramirez Landscaping website this is built using ReactJs for frontend, CSS for styling, and Python for server. Designed for potential customers in the Bay Area, CA, this project highlights a family-owned landscaping business with more than 20 years of experience. We offer a variety of services from yard maintenance to custom fencing backed by a legacy of loyal and satisfited clients. This codebase showcases a user-friendly interface, where future clients can explore our work, and request a consultation. 
 
 ## Live Demo
-[Ramirez Landscaping](https://ramirez-landscaping-b786c5861a49.herokuapp.com/)
+[Ramirez Landscaping](https://ramirez-landscaping-a2217ac6fd40.herokuapp.com/)
 
 ## Features
 This website was developed with the customer in mind, offering a seamless user experience and easy navigation through our pages:
