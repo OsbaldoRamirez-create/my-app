@@ -39,20 +39,20 @@ export default function BeforeAfterSlider({beforeImage, afterImage}) {
 
   return (
     <div className='before-after-slider' 
-    ref={containerRef}
+    ref={containerRef} // Reference to the container for mouse events
     onMouseMove={handleMove}
     onMouseUp={stopDragging}
     onMouseLeave={stopDragging}
     onTouchMove={handleMove}
     onTouchEnd={stopDragging}  
-    style={{"--divider-position": `${dividerPosition}%`}}  
+    style={{"--divider-position": `${dividerPosition}%`}}  // Custom property for CSS
     >
       <img src={beforeImage} alt="Before" className='before-image' />
       <div className='after-img-div'>
-      <img src={afterImage} alt="After" className='after-image' />
+      <img src={afterImage} alt="After" className='after-image' /> 
       </div>
       <div className='slider-handle'
-        style={{left:`${dividerPosition}%`}}
+        style={{left:`${dividerPosition}%`}} // Position the handle based on the divider position
         onMouseDown={startDragging}
         onTouchStart={startDragging}
       >
