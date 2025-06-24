@@ -97,11 +97,11 @@
     .about-info{
         width: 320px;
     }
-    .serivces-container{
+    .services-container{
         width: 320px;
         padding: 8px;
     }
     .services li{
-        font-size: 14px;
+        font-size: 12px;
     }
 }

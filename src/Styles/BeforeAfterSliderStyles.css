@@ -76,12 +76,19 @@ left: var(--divider-position); /* position handle */
 @media(max-width:860px){
 .before-after-slider{
     width: 100%;
+    margin: 0 auto;
 }
 }
 
 @media(max-width:800px){
 .before-after-slider{
     width: 100%;
-    height: 300px;
+}
+}
+
+@media(max-width:400px){
+.before-after-slider{
+    width: 350px;
+    height: 350px;
 }
 }
